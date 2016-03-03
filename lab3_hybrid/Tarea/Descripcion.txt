@@ -1,0 +1,1 @@
+Se escogieron dos imágenes para producir una imagen hibrida. Una de las imágenes "procesada_hija" es una foto mía, mientras que la foto "procesada_madre", es una foto de mi madre. Se intentó tomar las fotos lo más parecido posible para minimizar el pre-procesamiento. Al disminuir el tamaño de la imagen hibrida, se puede ver como mi madre rejuvenece :). 

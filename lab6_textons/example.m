@@ -16,7 +16,7 @@ k = 50;
 % diccionario de textones
 [map,textons] = computeTextons(fbRun(fb,im),k);
 %figure;imshow(map,[]);colormap(jet);
-
+%%
 D=dir('*.bmp');
 % texton maps de dos nuevas imagenes
 for i=1:numel(D),

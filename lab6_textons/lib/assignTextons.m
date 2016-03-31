@@ -9,6 +9,6 @@ for i = 1:d,
 end
 
 d2 = distSqr(data,textons);
-[y,map] = min(d2,[],2);
+[~,map] = min(d2,[],2);
 [w,h] = size(fim{1});
 map = reshape(map,w,h);

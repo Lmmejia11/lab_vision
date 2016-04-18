@@ -31,3 +31,8 @@ Nos basamos en el ejemplo para la estructura general. Se observó que en el ejem
 ## Resultados
 
 ### Net1
+
+ Parametros |  Score
+Barch_size | LearningRate | ACA
+--------------------------|----
+

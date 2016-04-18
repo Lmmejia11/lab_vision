@@ -54,9 +54,13 @@ Batch | LearningRate | ACA_Train | ACA_Val
 30|10^-5|5.50%|5.59%
 40|10^-4|9.02%|8.85%
 40|10^-5|10.81%|10.57%
+40 con jit| 10^-5|10.13%|9.85%
 50|10^-4|9.54%|9.15%
 50|10^-5|9.52%|9.23%
 
+Para el jitter, se reflejaban las imagenes en el ejex, ejey y la diagonal. Pero los resultados siempre fueron menores cuando se utilizó. Por esta razón, se decidió no utilizarlo.
+
+Como es de esperarse, aumentar el numero de epocas, siempre aumenta el ACA.
 ### Net2
 
 

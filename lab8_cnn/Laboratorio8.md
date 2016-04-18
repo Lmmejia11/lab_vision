@@ -32,7 +32,31 @@ Nos basamos en el ejemplo para la estructura general. Se observó que en el ejem
 
 ### Net1
 
- Parametros |  Score
-Barch_size | LearningRate | ACA
---------------------------|----
+Todos los experimeentos se realizaron con 5 epocas.
+
+Batch| LearningRate | ACA_Train | ACA_Val
+-----|--------------|-----------|-------
+100|10^-2|4%|4%
+100|10^-3|4.01%|4%
+100|10^-4|6.75%|6.63%
+
+Batch | LearningRate | ACA_Train | ACA_Val
+-----------|--------------|-----------|-------
+50|10^-3|5.50%|5.59%
+50|10^-4|9.54%|9.15%
+50 con jit|10^-4| 7.54%|7.69%
+50|10^-5|9.52%|9.23%
+50 con jit|10^-5|8.12%|8.13%
+
+Batch | LearningRate | ACA_Train | ACA_Val
+-----------|--------------|-----------|-------
+30|10^-4|9%|8.79%
+30|10^-5|5.50%|5.59%
+40|10^-4|9.02%|8.85%
+40|10^-5|10.81%|10.57%
+50|10^-4|9.54%|9.15%
+50|10^-5|9.52%|9.23%
+
+### Net2
+
 

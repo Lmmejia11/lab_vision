@@ -34,33 +34,47 @@ Nos basamos en el ejemplo para la estructura general. Se observó que en el ejem
 
 Todos los experimeentos se realizaron con 5 epocas.
 
-Batch| LearningRate | ACA_Train | ACA_Val
------|--------------|-----------|-------
-100|10^-2|4%|4%
-100|10^-3|4.01%|4%
-100|10^-4|6.75%|6.63%
+Batch| LearningRate | ACA_Train | ACA_Val | Train time
+-----|--------------|-----------|-------|--------------
+100|10^-2|4.00%|4.00%|11050 sec
+100|10^-3|4.01%|4.00%|6926 sec
+100|10^-4|6.75%|6.63%|8693 sec
 
-Batch | LearningRate | ACA_Train | ACA_Val
------------|--------------|-----------|-------
-50|10^-3|5.50%|5.59%
-50|10^-4|9.54%|9.15%
-50 con jit|10^-4| 7.54%|7.69%
-50|10^-5|9.52%|9.23%
-50 con jit|10^-5|8.12%|8.13%
+Batch | LearningRate | ACA_Train | ACA_Val | Train time
+-----------|--------------|-----------|-------|---------
+50|10^-3|5.50%|5.59%|24524 sec
+50|10^-4|9.54%|9.15%|18035 sec
+50 con jit|10^-4| 7.54%|7.69%|9817 sec
+50|10^-5|9.52%|9.23%|8688 sec
+50 con jit|10^-5|8.12%|8.13%|6425 sec
 
-Batch | LearningRate | ACA_Train | ACA_Val
------------|--------------|-----------|-------
-30|10^-4|9%|8.79%
-30|10^-5|5.50%|5.59%
-40|10^-4|9.02%|8.85%
-40|10^-5|10.81%|10.57%
-40 con jit| 10^-5|10.13%|9.85%
-50|10^-4|9.54%|9.15%
-50|10^-5|9.52%|9.23%
+Batch | LearningRate | ACA_Train | ACA_Val | Train time
+-----------|--------------|-----------|----|---------
+30|10^-4|9.00%|8.79%|7638 sec
+30|10^-5|5.50%|5.59%|6171 sec
+40|10^-4|9.02%|8.85%|8058 sec
+40|10^-5|10.81%|10.57%|6171 sec
+40 con jit| 10^-5|10.13%|9.85%|6425 sec
+50|10^-4|9.54%|9.15%|18035 sec
+50|10^-5|9.52%|9.23%|8688 sec
 
 Para el jitter, se reflejaban las imagenes en el ejex, ejey y la diagonal. Pero los resultados siempre fueron menores cuando se utilizó. Por esta razón, se decidió no utilizarlo.
 
 Como es de esperarse, aumentar el numero de epocas, siempre aumenta el ACA.
 ### Net2
+
+Batch | LearningRate | ACA_Train | ACA_Val | Train time
+-----------|--------------|-----------|--------|--------
+60|10^-4|4.00%|4.00%|4076 sec 
+60|10^-5|5.28%|5.27%|3091 sec
+60|10^-6|6.11%|5.85%|3339 sec
+40|10^-4|4.82%|4.70%|4730 sec
+40|10^-5|4.04%|4.06%|
+40|10^-6|6.75%|6.24%
+40|10^-7|
+40|10^-8|
+30|10^-6|
+30|10^-7|
+30|10^-8|
 
 

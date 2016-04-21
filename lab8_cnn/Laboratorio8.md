@@ -28,7 +28,7 @@ Softmaxloss|Softmaxloss
 
 Nos basamos en el ejemplo para la estructura general. Se observó que en el ejemplo de letras, utilizaban maxpooling y ningún Relu, pero en imagenetVGG siempre utilizaban Relu entre capas. Por lo tanto, se quiso hacer ambas. Se prefirió, en la primera red, reducir el tamaño con convolución con stride 2, en vez de maxpooling porque se realizarían menos consolaciones y el tiempo de entrenamiento y numero de parámetros sería menor. Como con esta red, solo se logró un máximo de 10% ACA, en la segunda red fuimos menos conservadoras. Agregamos otra capa convolución, y realizamos Maxpoolin en vez de strides en las convoluciones. Cabe agregar que el tamaño de los filtros y el número de maxpooling fueron escogidos teniendo en cuenta que se debería reducir una matriz de 128x128x1 a una de 1x1x25. Adicionalmente, se consideraron solo filtros de tamaño pequeño para reducir el tiempo de procesamiento.
 
-## Resultados
+## Resultados de experimentación
 
 ### Net1
 
@@ -76,7 +76,7 @@ Batch | LearningRate | ACA_Train | ACA_Val | Train time
 40|10^-4|4.82%|4.70%|4730 sec
 40|10^-5|4.04%|4.06%|3619 sec
 40|10^-6|6.75%|6.24%|3093 sec
-40|10^-7|
+40|10^-7|4.91%|4.74%|19654 sec
 40|10^-8|
 30|10^-6|
 30|10^-7|

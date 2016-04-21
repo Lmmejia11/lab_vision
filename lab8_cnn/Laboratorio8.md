@@ -26,6 +26,8 @@ NA | Maxpooling 2x2 stride 2
 NA | Convolución 6x6x200x25
 Softmaxloss|Softmaxloss
 
+Las redes se inicializan con la función *initializeTexturCNN.m* y *MAXinitializeTextureCNN.m* respectivamente. Después de inicializadas, la fase de entrenamiento se encuentra dentro de la función *texture_exercise.m*. Anidada a esta función, se encuentra *getBatch*, y *getBatchWithJitter*, las cuales preparan el siguiente batch, sin o con jitter. Finalmente, la red es evaluada en el conjunto de validación por la función *train_net.m*.
+
 Nos basamos en el ejemplo para la estructura general. Se observó que en el ejemplo de letras, utilizaban maxpooling y ningún Relu, pero en imagenetVGG siempre utilizaban Relu entre capas. Por lo tanto, se quiso hacer ambas. Se prefirió, en la primera red, reducir el tamaño con convolución con stride 2, en vez de maxpooling porque se realizarían menos consolaciones y el tiempo de entrenamiento y numero de parámetros sería menor. Como con esta red, solo se logró un máximo de 10% ACA, en la segunda red fuimos menos conservadoras. Agregamos otra capa convolución, y realizamos Maxpoolin en vez de strides en las convoluciones. Cabe agregar que el tamaño de los filtros y el número de maxpooling fueron escogidos teniendo en cuenta que se debería reducir una matriz de 128x128x1 a una de 1x1x25. Adicionalmente, se consideraron solo filtros de tamaño pequeño para reducir el tiempo de procesamiento.
 
 ## Resultados de experimentación

@@ -52,15 +52,20 @@ Batch | LearningRate | ACA_Train | ACA_Val | Train time
 -----------|--------------|-----------|----|---------
 30|10^-4|9.00%|8.79%|7638 sec
 30|10^-5|5.50%|5.59%|6171 sec
+
+Batch | LearningRate | ACA_Train | ACA_Val | Train time
+-----------|--------------|-----------|----|---------
 40|10^-4|9.02%|8.85%|8058 sec
 40|10^-5|10.81%|10.57%|6171 sec
 40 con jit| 10^-5|10.13%|9.85%|6425 sec
-50|10^-4|9.54%|9.15%|18035 sec
-50|10^-5|9.52%|9.23%|8688 sec
+40|10^-6| %| %|  sec
+40|10^-7| %| %|  sec
+40|10^-8| %| %|  sec
 
 Para el jitter, se reflejaban las imagenes en el ejex, ejey y la diagonal. Pero los resultados siempre fueron menores cuando se utilizó. Por esta razón, se decidió no utilizarlo.
 
-Como es de esperarse, aumentar el numero de epocas, siempre aumenta el ACA.
+Como es de esperarse, aumentar el numero de epocas, siempre aumenta el ACA, esto lo confirmamos realizando unicamente un experimento con 10 epocas. Los parametros utilizados para este fueron batch=100, L_rate=10^-3. En este obtuvimos un ACA de 5.03% para entrenamiento y 4.84% para validación, el tiempo de entrenamiento fue de 34588 sec. Al comparar con los valores obtenidos con los mismos parámetros pero con 5 epocas observamos que el ACA mejoró y el tiempo aumentó x5. 
+
 ### Net2
 
 Batch | LearningRate | ACA_Train | ACA_Val | Train time
@@ -69,8 +74,8 @@ Batch | LearningRate | ACA_Train | ACA_Val | Train time
 60|10^-5|5.28%|5.27%|3091 sec
 60|10^-6|6.11%|5.85%|3339 sec
 40|10^-4|4.82%|4.70%|4730 sec
-40|10^-5|4.04%|4.06%|
-40|10^-6|6.75%|6.24%
+40|10^-5|4.04%|4.06%|3619 sec
+40|10^-6|6.75%|6.24%|3093 sec
 40|10^-7|
 40|10^-8|
 30|10^-6|

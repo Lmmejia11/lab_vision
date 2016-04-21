@@ -59,7 +59,6 @@ Batch | LearningRate | ACA_Train | ACA_Val | Train time
 40|10^-5|10.81%|10.57%|6171 sec
 40 con jit| 10^-5|10.13%|9.85%|6425 sec
 40|10^-6|5.42%|5.37%|12819 sec
-40|10^-7| %| %|  sec
 
 Para el jitter, se reflejaban las imagenes en el ejex, ejey y la diagonal. Pero los resultados siempre fueron menores cuando se utilizó. Por esta razón, se decidió no utilizarlo.
 
@@ -76,7 +75,6 @@ Batch | LearningRate | ACA_Train | ACA_Val | Train time
 40|10^-5|4.04%|4.06%|3619 sec
 40|10^-6|6.75%|6.24%|3093 sec
 40|10^-7|4.91%|4.74%|19654 sec
-40|10^-8|
 
 A pesar de los resultados esperados, en los que se creía que la red más larga entrenaría mejor, basadas en los experimentos realizados la red pequeña fue mejor. Sin embargo dado el tiempo no se lograron realizar más experimentos con la red neuronal larga y no podemos comparar para todos las variaciones de parámetros los resultados. Es probable que la red más larga tuviera necesidad de otros parámetros para poder entrenar así como de más imágenes debido al que el número de pesos que debe aprender es grande. 
 
